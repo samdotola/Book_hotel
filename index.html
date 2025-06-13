@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conference Hotels Directory</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #searchBar {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .hotel-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .hotel-card h2 {
+      margin: 0 0 10px;
+      color: #004080;
+    }
+
+    .hotel-card p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .hotel-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #004080;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .hotel-card a:hover {
+      background-color: #0059b3;
+    }
+
+    @media (max-width: 600px) {
+      .hotel-card {
+        padding: 15px;
+      }
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+
+    .logo {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 22px;
+      }
+      .header p {
+        font-size: 16px;
+      }
+      .logo {
+        width: 200px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="NSEHeaderReal.png" alt="NSE Logo" class="logo">
+    <h1>International Conference 2025</h1>
+    <p>Welcome to the hotel booking site.</p>
+  </div>
+
+
+
+
+  <input type="text" id="searchBar" placeholder="Search by hotel name, address, or contact...">
+
+  <div id="hotelList">
+    <!-- Example Hotel -->
+    <div class="hotel-card">
+      <h2>DOPAD HILLS HOTEL & SUITES</h2>
+      <p><strong>Address:</strong> 67, Irepodun Street, Kajorepo, Agbowo along iwo-ojoo expressway,Ibadan 7.6KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦25,000<br>Deluxe Room: ₦30,000<br>Classic Rooms: ₦35,000<br>Executive Room: ₦45,000<br>All with complementry breakfast</p>
+      <p><strong>Contact:</strong> 07040437168</p>
+      <a href="tel:+23407040437168">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>CLINCLIA HOTEL</h2>
+      <p><strong>Address:</strong> 1A/1B Kebba close off Abayomi Akinmosa, jericho,idi-isin,Ibadan 12KM</p>
+      <p><strong>Offers:</strong><br>Single Room: ₦15,000<br>Standard Room: ₦30,000<br>Deluxe Room: ₦35,000<br>Executive Room: ₦45,000<br>One Bedroom: ₦60,000<br>10% discount rate on the total amount</p>
+      <p><strong>Contact:</strong> 07030962950, 07082308073<br>Email: Clincliaservicedepartments@gmail.com</p>
+      <a href="mailto:Clincliaservicedepartments@gmail.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>MARCHFORTE HOTEL & SUITES</h2>
+      <p><strong>Address:</strong> No 2, Adejumo close, off secretariat total garden road, Agodi GRA, Ibadan 6.3KM</p>
+      <p><strong>Offers:</strong><br>Super Deluxe: ₦50,000<br>Executive Deluxe: ₦50,000<br>Junior Suites: ₦100,000<br>Exclusive Suites: ₦100,000<br>Conference Room(30 capacity): ₦120,000 per day<br>Daily breakfast for a guest<br>High-speed wifi connectivity<br>Access to swimming pool and gym<strong><br>EXCLUSIVE BENEFITS:</strong><br>Discount airpot shuttle services for arrival and departure<br>Complimentary late check-out(subject to availability)<br>Full access to our VIP Lounge and pool bar</p>
+      <p><strong>Contact:</strong> 09110016995, 09135524814<br>Email: marchfortecourtyard@gmail.com | reservation@marchfortecourtyard.com</p>
+      <a href="https://marchfortecourtyard.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ROFEL HOTEL</h2>
+      <p><strong>Address:</strong> 15-18 Moremi street,off Aare Avenue, New Bodija, Ibadan 4.7KM</p>
+      <p><strong>Offers:</strong><br>20% discount on all room categories to NSE members</p>
+      <p><strong>Contact:</strong> 08034644248<br>Email: jagundon2001@gmail.com</p>
+      <a href="mailto:jagundon2001@gmail.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>READYHOMES APARTMENT</h2>
+      <p><strong>Address:</strong> Bodija,mokola,ui, samonda, ringroad, Ibadan. 2.7KM</p>
+      <p><strong>Offers:</strong><br>Basic 2 bedroom: ₦55,000<br>Standard 2 bedroom: ₦75,000<br>Premium 2 bedroom: ₦90,000<br>Standard 3 bedroom: ₦120,000</p>
+      <p><strong>Contact:</strong> 09167499130</p>
+      <a href="https://readyhomes.ng" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>REAL CHOICE HOTEL</h2>
+      <p><strong>Address:</strong> Opp. Highland specialist hospital, Yemetu, Ibadan. 7.3KM</p>
+      <p><strong>Offers:</strong><br>25% Discount on all rooms with  breakfast included for NSE<br>50 Rooms</p>
+      <p><strong>Contact:</strong> 08023339585</p>
+      <a href="tel:+2348023339585" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>AMIGOS HOTEL</h2>
+      <p><strong>Address:</strong> 6, Fadeyi street, Agbowo, Ibadan. 2.1KM</p>
+      <p><strong>Offers:</strong><br>Deluxe Room: ₦18,000<br>Executive Room: ₦25,000<br>Luxury Room: ₦30,000<br>Air conditioned in all rooms with free wifi</p>
+      <p><strong>Contact:</strong> 08141352464<br>Email: amigoshotel1@gmail.com</p>
+      <a href="https://www.amigoshotel.com.ng" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>HARRINGTON INN HOTEL</h2>
+      <p><strong>Address:</strong> No 11,Dejo oyelese street old bodija, Ibadan. 5.3KM</p>
+      <p><strong>Offers:</strong><br>9 rooms and suites<br>Standard Room: ₦40,000<br>Executive Room: ₦45,000<br>Executive Suite: ₦55,000<br>Airpot pickup and drop off services, free wifi, adequate parking space</p>
+      <p><strong>Contact:</strong> 08160475663</p>
+      <a href="tel:+2348160475663" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>SL HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> Taiwo Oyeleru street, boluwaji bustop, Ibadan. 20KM</p>
+      <p><strong>Offers:</strong><br>30 rooms<br>Apartment: ₦50,000<br>Executive Suite: ₦30,000<br>Executive Double Suite: ₦40,000<br>Free wifi and breakfast</p>
+      <p><strong>Contact:</strong> 08140132719</p>
+      <a href="tel:+2348140132719" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GOLDEN TULIP HOTEL</h2>
+      <p><strong>Address:</strong> Quarter 781, government reserved area, Jericho, Ibadan. 10KM</p>
+      <p><strong>Offers:</strong><br>Deluxe: ₦120,000<br>Executive: ₦200,000<br>Many Suites</p>
+      <p><strong>Contact:</strong> 09060004988<br>Email: marketingmanager@goldentulipibadanhotel.com</p>
+      <a href="https://dopadhills.example.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>NITAFI LUXURY HOTEL</h2>
+      <p><strong>Address:</strong> Road 2 omolayo estate, akobo, Ibadan. 12km</p>
+      <p><strong>Offers:</strong><br>60 rooms<br>Deluxe Room: ₦45,000<br>Superior Room: ₦55,000<br>Executive Room: ₦60,000<br>Luxury Suite: ₦80,000<br>Free breakfast and wifi</p>
+      <p><strong>Contact:</strong> 08089875595<br>Email: nitafiluxuryhotel@gmail.com</p>
+      <a href="https://nitafiluxury.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>BLACK GOLD GUESTHOUSE</h2>
+      <p><strong>Address:</strong> No 2 prince odediran street, Felele, Ibadan. 16KM</p>
+      <p><strong>Offers:</strong><br>25 rooms<br>Standard and Single Room: ₦15,000<br>Double Room: ₦25,000<br>Luxury Room: ₦35,000</p>
+      <p><strong>Contact:</strong> 08039271152</p>
+      <a href="https://dopadhills.example.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GALLANISUITES HOTEL, JERICHO</h2>
+      <p><strong>Address:</strong> No 1 abel awe close off oladele ajao,Jericho, Ibadan. 11KM</p>
+      <p><strong>Offers:</strong><br>Many Suites<br>Standard Room: ₦50,000<br>Deluxe Room: ₦60,000<br>Executive Suite: ₦80,000<br>Superior Suite: ₦100,000<br>Royal Suite: ₦105,000</p>
+      <p><strong>Contact:</strong> 07055567775</p>
+      <a href="https://gallanisuites.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>TRINICH HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> Kuola junction, off akala expressway, Ibadan. 19KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦35,000<br>Executive Room: ₦40,000<br>Suite: ₦60,000<br>Free breakfast</p>
+      <p><strong>Contact:</strong> 08101591843</p>
+      <a href="tel:+2348101591843" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>LA'BOTHA HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> No 9, onibonoje street, adjacent ajimobi market, Molete, Ibadan. 14KM</p>
+      <p><strong>Offers:</strong><br>15 Rooms and Suites<br>Standard Room: ₦18,000<br>Deluxe Room: ₦21,000<br>Business Suite: ₦41,690<br>Club Suite: ₦30,000</p>
+      <p><strong>Contact:</strong> 08057844015</p>
+      <a href="tel:+2348057844015" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>SHUGALAND HOTEL </h2>
+      <p><strong>Address:</strong> Plot B, shugaland bus stop,odo ona, Apata, Ibadan. 16KM</p>
+      <p><strong>Offers:</strong><br>20 Rooms<br>Standard Room: ₦35,000<br>Deluxe Room: ₦40,000</p>
+      <p><strong>Contact:</strong> 07061276981</p>
+      <a href="tel:+2347061276981" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>U.I HOTEL</h2>
+      <p><strong>Address:</strong> Opp chapel of resurrection, University of Ibadan. 1.5KM</p>
+      <p><strong>Offers:</strong><br>Double Room: ₦25,000<br>Royal Standard: ₦28,000<br>Royal Executive: ₦35,000<br>Luxury King: ₦50,000<br>Royal Suite: ₦55,000</p>
+      <p><strong>Contact:</strong>07084000002, 08072106893</p>
+      <a href="tel:+2347084000002" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>EURO HOTEL</h2>
+      <p><strong>Address:</strong> 30 Alaafin avenue oluyole, ibadan. 13KM</p>
+      <p><strong>Offers:</strong><br>30 Rooms<br>Deluxe Double: ₦25,000<br>Standard Double: ₦20,000<br>Classic Double: ₦20,500<br>Royal Double: ₦50,000</p>
+      <p><strong>Contact:</strong>09070965739</p>
+      <a href="tel:+2349070965739" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>DREAM SUITES</h2>
+      <p><strong>Address:</strong> 4 Abinusawa street, Bashorun, ibadan. 8.1KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦29,000<br>Executive Room: ₦40,000</p>
+      <p><strong>Contact:</strong>08061488057</p>
+      <a href="tel:+2348061488057" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>HEXAGON HOTEL</h2>
+      <p><strong>Address:</strong> 16 Bashorun road, bibilari bus stop,Idiape, Ibadan. 7.7KM</p>
+      <p><strong>Offers:</strong><br>20 Rooms<br>Standard Double Room: ₦35,000<br>Suite: ₦50,000<br>Deluxe Suite: ₦55,000</p>
+      <p><strong>Contact:</strong>08061488057</p>
+      <a href="tel:+2348061488057" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>KAKANFO INN AND CONFERENCE CENTRE</h2>
+      <p><strong>Address:</strong> 1 Nihinola street, off joyce b road, off ring road, Ibadan. 13KM</p>
+      <p><strong>Offers:</strong><br>93 Rooms<br>Classic Studio: ₦75,000<br>Luxury: ₦95,000<br>Classic Suite: ₦150,000<br>Presidential Villa 1: ₦165,000<br>Presidential Villa 2: ₦200,000</p>
+      <p><strong>Contact:</strong>07055828309<br>Email: rm@kakanfoinn.com</p>
+      <a href="https://www.kakanfoinn.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>MASFORM LODGE</h2>
+      <p><strong>Address:</strong> Behind Akilapa mosque, Bodija market, Ibadan. 3.1KM</p>
+      <p><strong>Offers:</strong><br>30 Rooms<br>Standard Room: ₦30,000<br>Executive: ₦35,000<br>Double: ₦40,000</p>
+      <p><strong>Contact:</strong>08088406199</p>
+      <a href="tel:+2348088406199" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>CLASSICUS INN</h2>
+      <p><strong>Address:</strong> 1-3 Ifelodun street, orogun junction adjacent u.i second gate, ibadan. 2.3KM</p>
+      <p><strong>Offers:</strong><br>25 Rooms<br>Classic Room Without Breakfast: ₦25,000<br>Classic Room With Breakfast: ₦30,000<br>Executive Room With Breakfast: ₦40,000<br>Twin Suite With Breakfast: ₦45,000</p>
+      <p><strong>Contact:</strong>09039591450</p>
+      <a href="tel:+2349039591450" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>CLARUS APARTMENT</h2>
+      <p><strong>Address:</strong> Olive court estate, oba biladu street, Agodi, Ibadan. 6.7KM</p>
+      <p><strong>Offers:</strong><br>20% discount for the apartments</p>
+      <p><strong>Contact:</strong>08034836279</p>
+      <a href="tel:+2348034836279" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>FAWZY HOTEL</h2>
+      <p><strong>Address:</strong> Akinyemi way, adjacent Brecan centre off ringroad, Ibadan. 12KM</p>
+      <p><strong>Offers:</strong><br>Classic Room: ₦35,000<br>Deluxe Room: ₦40,000<br>Royal Deluxe: ₦48,000<br>Room and Living Room: ₦100,000<br>Free breakfast, wifi and gym</p>
+      <p><strong>Contact:</strong>08105479934<br>Email: bookingsfawzyhotel.com</p>
+      <a href="tel:+2348105479934" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>DARLINGTON PALACE HOTEL NIG.LTD</h2>
+      <p><strong>Address:</strong> A17 darlington street, mokola hill, ibadan. 6.2KM</p>
+      <p><strong>Offers:</strong><br>20 Rooms<br>Standard Room: ₦25,000<br>Executive Room: ₦35,000</p>
+      <p><strong>Contact:</strong>07038305301/ 08181845305</p>
+      <a href="tel:+2347038305301" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>DE'MANCHY HOTELS AND SUITES</h2>
+      <p><strong>Address:</strong> 19, Oyegbami street barracks felele, Ibadan. 15KM</p>
+      <p><strong>Offers:</strong><br>35 Rooms<br>Classic Room: ₦45,000<br>Super Classic: ₦50,000<br>Executive Deluxe: ₦90,000<br>Deluxe Room: ₦85,000</p>
+      <p><strong>Contact:</strong>08148717017</p>
+      <a href="tel:+2348148717017" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>KDHOTEL AND APARTMENT</h2>
+      <p><strong>Address:</strong> No 2, KD drive, opp dominos pizza, Akobo, Ibadan. 8.4KM</p>
+      <p><strong>Offers:</strong><br>30 Rooms<br>15% discount for all rooms</p>
+      <p><strong>Contact:</strong>09160003295<br>Email: kdhotel2024@gmail.com</p>
+      <a href="mailto:kdhotel2024@gmail.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>STELLA HOLIDAY INN- APARTMENTS & HOTELS</h2>
+      <p><strong>Address:</strong> Plot 20 bell-air estate, off alao akala express, Oluyole, Ibadan. 18KM</p>
+      <p><strong>Offers:</strong><br>30 Rooms<br>Single Bed Room: ₦30,000<br>2 Bedroom: ₦50,000<br>2 Bedroom(new building): ₦60,000</p>
+      <p><strong>Contact:</strong>07053911237<br>Email: stellaholidayinn@gmail.com</p>
+      <a href="mailto:stellaholidayinn@gmail.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>DANEST HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> 4 Beckley street/47 adeyi street, old bodija, Ibadan. 4.9KM</p>
+      <p><strong>Offers:</strong><br>24 Rooms<br>Superior Deluxe: ₦35,000<br>Business Suite: ₦50,000<br>Royal Suite: ₦55,000</p>
+      <p><strong>Contact:</strong>08165920792</p>
+      <a href="tel:+2348165920792" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>THE HAVEN BY NHS GLOBAL</h2>
+      <p><strong>Address:</strong> 5A, Apampa Bashorun, jericho, Ibadan. 9.9KM</p>
+      <p><strong>Offers:</strong><br>One Bedroom: ₦60,000<br>Two Bedroom: ₦100,000<br>Three Bedroom: ₦150,000<br>Superfast wifi and premium security</p>
+      <p><strong>Contact:</strong>09134446531</p>
+      <a href="tel:+2349134446531" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ORLLAR INTERNATIONAL HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> 1, Foluso Akinyemi avenue,oganla iwo exp.rd,olodo road, ibadan. 19KM</p>
+      <p><strong>Offers:</strong><br>Super Executive: ₦37,000<br>Semi Deluxe: ₦40,000<br>Super Deluxe: ₦60,000<br>Mini Apartment: ₦65,000</p>
+      <p><strong>Contact:</strong>09035749811</p>
+      <a href="tel:+2349035749811" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>POA GUESTHOUSE</h2>
+      <p><strong>Address:</strong> No 1, iyana bodija market exp bus stop along ojo to iwo road, Ibadan. 6.2KM</p>
+      <p><strong>Offers:</strong><br>15% discount on all rooms</p>
+      <p><strong>Contact: </strong>+234 814 880 8800, +234 700 880 8800</p>
+      <a href="tel:+2348148808800" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>OSMAK HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> Zionist estate behind anchor mall, akala express, Ibadan. 17KM</p>
+      <p><strong>Offers:</strong><br>40 Rooms<br>Standard Room: ₦20,000<br>Executive Rooms: ₦25,000<br>Premium Rooms: ₦30,000<br>Mini Suites: ₦40,000<br>Breakfast, wifi and gym on site</p>
+      <p><strong>Contact:</strong>08161705405</p>
+      <a href="tel:+2348161705405" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>SOLAM HOTEL</h2>
+      <p><strong>Address:</strong> Annex 2 block7, alaafin avenue, Oluyole Estate, Ibadan. 16KM</p>
+      <p><strong>Offers:</strong><br>20 Rooms<br>10% discount on all rooms</p>
+      <p><strong>Contact:</strong>08134735536</p>
+      <a href="tel:+2348134735536" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ED & DRE LUXURIA HOTEL</h2>
+      <p><strong>Address:</strong> 6, Orelere street, idi ape, ikolaba, Ibadan. 7.3KM</p>
+      <p><strong>Offers:</strong><br>26 Rooms<br>Standard Room: ₦70,000<br>Luxury Room: ₦85,000<br>Executive Suite: ₦110,000<br>Presidential Suite: ₦125,000<br>Free wifi with breakfast</p>
+      <p><strong>Contact:</strong>07041004932</p>
+      <a href="https://ed-dre.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>DAMJAY HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> Idiape rd, ikolaba, agodi, Ibadan. 6.7KM</p>
+      <p><strong>Offers:</strong><br>30 Rooms<br>Standard Room: ₦30,000<br>Executive Room: ₦45,000<br>Deluxe Room: ₦50,000<br>Royal Suite: ₦90,000<br>Free breakfast, free wifi, gym and satelite TV(20% discount)</p>
+      <p><strong>Contact:</strong>08039900400</p>
+      <a href="https://damjayhotels.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>DUKE RESIDENCE</h2>
+      <p><strong>Address:</strong> Olive estate, off idi-ishin,afara rd, Ibadan. 13KM</p>
+      <p><strong>Offers:</strong><br>Many apartments<br>20% discount on all rooms</p>
+      <p><strong>Contact:</strong>08025612883/ 09012947639<br>Email: info@dukesresidence.com</p>
+      <a href="https://dukesresidence.com/home" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>NEST SPA HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> Plot 807, oba abimbola way, opp uch 2nd gate along secretariat, Ibadan. 5.9KM</p>
+      <p><strong>Offers:</strong><br>30 Rooms<br>Standard and executive rooms 25% discount</p>
+      <p><strong>Contact:</strong>08156222644</p>
+      <a href="tel:+2348156222644" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ROYAL RESORT IBADAN</h2>
+      <p><strong>Address:</strong> Jibowu crescent iyaganku, GRA, Ibadan. 10KM</p>
+      <p><strong>Offers:</strong><br>Free breakfast and 24 hour fitness center<br>15% discount on all rooms</p>
+      <p><strong>Contact:</strong>07030703400</p>
+      <a href="tel:+2347030703400" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ROYAL PALACE HOTEL</h2>
+      <p><strong>Address:</strong> Alafia street, mokola hill, ibadan. 6.2KM</p>
+      <p><strong>Offers:</strong><br>23 Rooms<br>Standard Room: ₦25,000<br>Double Standard: ₦30,000<br>Executive Room: ₦40,000<br>AC in all rooms and 24 hours electricity</p>
+      <p><strong>Contact:</strong>09015525389</p>
+      <a href="tel:+2349015525389" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ROYAL CEDAR HOTEL AND APARTMENTS</h2>
+      <p><strong>Address:</strong> Plot 7, GRA ibadan, block 7, iyaganku, Oluyole, Ibadan. 11KM</p>
+      <p><strong>Offers:</strong><br>15 Bedrooms<br>Royal Studio Room: ₦22,000<br>Deluxe Room: ₦35,000<br>Suite Room: ₦40,000<br>Free breakfast, wifi and gym</p>
+      <p><strong>Contact:</strong>08035634300</p>
+      <a href="tel:+23408035634300" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ROYAL HOTELS</h2>
+      <p><strong>Address:</strong> Apata, Ibadan. 14KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦15,000<br>Deluxe Room: ₦24,000</p>
+      <p><strong>Contact:</strong>08137172397</p>
+      <a href="tel:+2348137172397" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ROYAL B HOTEL</h2>
+      <p><strong>Address:</strong> 27 David ola oyeniyi street, Ibadan. 13KM</p>
+      <p><strong>Offers:</strong><br>20 Rooms<br>15% discount on all rooms</p>
+      <p><strong></strong></p>
+      <a href="tel:+2348148808800" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>SCROLAB EXECUTIVE HOTELS</h2>
+      <p><strong>Address:</strong> Imalealafia street, Ibadan. 11KM</p>
+      <p><strong>Offers:</strong><br>60 Rooms<br>Classic Room: ₦25,000<br>Luxury Suite: ₦45,000<br>Bussiness Suite: ₦40,000<br>Royal/Deluxe: ₦30,000<br>Free wifi and parking space</p>
+      <p><strong>Contact:</strong>08032225235</p>
+      <a href="https://scrolabhotel.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>TM ROYAL HOTEL</h2>
+      <p><strong>Address:</strong> Ayodele adelaja st, sonso road, ibadan. 13KM</p>
+      <p><strong>Offers:</strong><br>40 Rooms<br>Standard Room: ₦15,000<br>Executive Room: ₦20,000<br>Super Executive: ₦25,000<br>Prime Deluxe: ₦35,000<br>Free breakfast, wifi and gym</p>
+      <p><strong>Contact:</strong>08115633636</p>
+      <a href="tel:+2348115633636" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>TRAVEL HOUSE HOTEL, IBADAN</h2>
+      <p><strong>Address:</strong> Plot 22A, Block X, mko way,next to Access bank, Ibadan. 12KM</p>
+      <p><strong>Offers:</strong><br>69 Rooms<br>Standard Room: ₦25,000<br>Deluxe Room: ₦30,000</p>
+      <p><strong>Contact:</strong>09139375467</p>
+      <a href="https://travelhousenigeria.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>OLYMPUS HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> 27 Ibadan-Abeokuta rd, Oluyole, Ibadan. 11KM</p>
+      <p><strong>Offers:</strong><br>20 Rooms<br>15% discount on all rooms<br>Deluxe Room: ₦30,000</p>
+      <p><strong>Contact:</strong>09139052671</p>
+      <a href="tel:+2349139052671" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>TROIS ORE RESIDENCES</h2>
+      <p><strong>Address:</strong> Plot 7, commercial subdivision,onireke oba akenzua crescent, GRA, Ibadan. 9KM</p>
+      <p><strong>Offers:</strong><br>20% discount on all rooms/bedrooms</p>
+      <p><strong>Contact:</strong>07054212060<br>Email: residence@tileri.com</p>
+      <a href="https://www.tileri.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>TRAVELLERS MISSION GUEST HOUSE</h2>
+      <p><strong>Address:</strong> No 2, selia amoke close adenuga street, Ibadan. 3.4KM</p>
+      <p><strong>Offers:</strong><br>15 Rooms<br>Single Room: ₦10,000<br>Double Room: ₦18,000</p>
+      <p><strong>Contact:</strong>09069892915/08148808800</p>
+      <a href="tel:+2349069892915" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>HAIL HENRIETTA HOTEL(TRIPLE H) HOTEL</h2>
+      <p><strong>Address:</strong> Block XXI, olubadan housing estate, new ife rd egbeda, Ibadan. 14KM</p>
+      <p><strong>Offers:</strong><br>80 Rooms<br>Standard Double Room: ₦50,000<br>Luxury Double Room: ₦55,000<br>Suite: ₦70,000<br>Free wifi and parking space</p>
+      <p><strong>Contact:</strong>08076724631</p>
+      <a href="tel:+2348076724631" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>REAL DIAMOND HOTEL</h2>
+      <p><strong>Address:</strong> Anfani road, Ibadan. 13KM</p>
+      <p><strong>Offers:</strong><br>35 Rooms<br>20% discount on all rooms</p>
+      <p><strong>Contact:</strong>08085729293</p>
+      <a href="tel:+2348085729293" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GREENDALE LODGE & APARTMENTS</h2>
+      <p><strong>Address:</strong> D'Rovans way, 2 Lawal Okelanfa rd, Ibadan. 12KM</p>
+      <p><strong>Offers:</strong><br>Large Double Room: ₦15,000<br>Double Room with Balcony: ₦20,000<br>Combo Rooms: ₦30,000</p>
+      <p><strong></strong></p>
+      <a href="https://greendalehotel.hotelonia.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GRAND SERENE HOTEL</h2>
+      <p><strong>Address:</strong> Iyaganku gra, 19 jibowu cres, new gra, Ibadan. 11KM</p>
+      <p><strong>Offers:</strong><br>40 Rooms<br>Executive Room: ₦22,000<br>Superior Room: ₦25,000<br>Deluxe Suite: ₦30,000<br>Royal Suite: ₦70,000</p>
+      <p><strong>Contact:</strong>08066619313</p>
+      <a href="tel:+2348066619313" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GRANDFIELD HOTELS</h2>
+      <p><strong>Address:</strong> Oluyole, ibadan. 15KM</p>
+      <p><strong>Offers:</strong><br>15% discount on all rooms with free breakfast, wifi and 24 hours electricity</p>
+      <p><strong>Contact:</strong>09127894561<br>Email: info@grandfieldhotels.com</p>
+      <a href="mailto:info@grandfieldhotels.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GEZA LUXURY APARTMENTS</h2>
+      <p><strong>Address:</strong> 14 Palm avenue,  extension oluyole, ibadan. 16KM</p>
+      <p><strong>Offers:</strong><br>Many bedrooms<br>One Bedroom: ₦70,000<br>Two Bedroom: ₦135,000<br>Three Bedroom: ₦150,000<br>Four Bedroom: ₦170,000<br>Free wifi</p>
+      <p><strong>Contact:</strong>08139436277</p>
+      <a href="tel:+2348139436277" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>GRACE APARTMENTS</h2>
+      <p><strong>Address:</strong> Agodi, Ibadan. 6.1KM</p>
+      <p><strong>Offers:</strong><br>15% discount on the rooms</p>
+      <p><strong>Contact:</strong>09118297664</p>
+      <a href="tel:+2349118297664" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>AMAZING GRACE HOSTEL AND INTERNATIONAL SERVICED  APARTMENTS</h2>
+      <p><strong>Address:</strong> Asiri abo street, agbowo, Ibadan. 4.6KM</p>
+      <p><strong>Offers:</strong><br>20% discounts on the apartments</p>
+      <p><strong>Contact:</strong>08059071891</p>
+      <a href="tel:+2348059071891" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>AYOTOZ HOTEL</h2>
+      <p><strong>Address:</strong> Ojokondo avenue, oduduwa road, Ibadan. 1.5KM</p>
+      <p><strong>Offers:</strong><br>Single Room Without AC: ₦10,000<br>Single Room With AC: ₦15,000</p>
+      <p><strong>Contact:</strong>09063684603</p>
+      <a href="tel:+2349063684603" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ADIS HOTELS IBADAN</h2>
+      <p><strong>Address:</strong> 1 Akinsehiwa street, oluyole way, Ibadan. 4.7KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦25,000<br>Executive Room: ₦30,000<br>Deluxe Room: ₦35,000<br>Free wifi</p>
+      <p><strong>Contact:</strong>08169339395<br>Email: enquiries@adishotels.com</p>
+      <a href="https://adishotels.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>PREMIER HOTEL</h2>
+      <p><strong>Address:</strong> Mokola hill close to UI. Ibadan. 6.3KM</p>
+      <p><strong>Offers:</strong><br>23 Rooms<br>Classic Suite: ₦25,000<br>Deluxe Suite: ₦38,000<br>Executive Deluxe: ₦50,000<br>Business Suite: ₦70,000</p>
+      <p><strong>Contact:</strong>0811612345</p>
+      <a href="tel:+234811612345" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>EASHREACH COURT HOTEL</h2>
+      <p><strong>Address:</strong> Aviation way, samonda, Ibadan. 4.1KM</p>
+      <p><strong>Offers:</strong><br>18 Rooms<br>20% discount on all rooms</p>
+      <p><strong>Contact:</strong>08031563934</p>
+      <a href="tel:+2348031563934" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ALIVIAR HOTEL</h2>
+      <p><strong>Address:</strong> 11 oluwo kekere road, ibadan. 8.3KM</p>
+      <p><strong>Offers:</strong><br>23 Rooms<br>Classic Room: ₦20,000<br>Royal Double: ₦25,000<br>Superior Double: ₦30,000</p>
+      <p><strong>Contact:</strong>07047981039</p>
+      <a href="https://aliviarhotels.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>THE CITRON HOTEL</h2>
+      <p><strong>Address:</strong> 11 kudeti ave,onireke GRA Ibadan. 8.7KM</p>
+      <p><strong>Offers:</strong><br>Classic Room: ₦25,000<br>Superior Room: ₦30,000<br>Executive Room: ₦35,000<br>Executive Suite: ₦40,000</p>
+      <p><strong>Contact:</strong>09134445907/09134445908<br>Email: reservation@thecitronhotels.com</p>
+      <a href="https://thecitronhotels.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>SADIM GUEST HOUSE</h2>
+      <p><strong>Address:</strong> 7 Aina adefolayan street,secretatariat, Ibadan. 4.9KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦25,000<br>Executive Standard: ₦30,000<br>Super Executive: ₦35,000</p>
+      <p><strong>Contact:</strong>07008808800</p>
+      <a href="tel:+2347008808800" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>3G GARDENS AND APARTMENTS</h2>
+      <p><strong>Address:</strong> Yidi road, Agodi, Ibadan. 8.4KM</p>
+      <p><strong>Offers:</strong><br>15% discount on the apartments</p>
+      <p><strong>Contact:</strong>09133666056</p>
+      <a href="https://3ggardens.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>SAIRE HOTEL</h2>
+      <p><strong>Address:</strong> New bodija extension, Bamgbola ave, Ibadan. 4.6KM</p>
+      <p><strong>Offers:</strong><br>10 Rooms and Suites<br>Standard Rooms: ₦28,000<br>Deluxe: ₦40,000<br>Executive Room: ₦50,000</p>
+      <p><strong>Contact:</strong>07025005640</p>
+      <a href="https://www.sairehotels.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>ENIKE HOTEL</h2>
+      <p><strong>Address:</strong> Apete road, ijokodo, Ibadan. 5KM</p>
+      <p><strong>Offers:</strong><br>20% discount on all rooms</p>
+      <p><strong>Contact:</strong>08160055078</p>
+      <a href="tel:+2348160055078" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>BRIGHTON HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> oke ado market road, GRA, Ibadan. 11KM</p>
+      <p><strong>Offers:</strong><br>Standard Rooms: ₦30,000<br>Super Deluxe: ₦32,000<br>Royal Deluxe: ₦40,000<br>Royal Executive: ₦50,000</p>
+      <p><strong>Contact:</strong>08093534396</p>
+      <a href="tel:+2348093534396" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>KOLTOL GUESTHOUSE</h2>
+      <p><strong>Address:</strong> 13 ajayi osungbeku ave,agodi gra,Ibadan. 6.4KM</p>
+      <p><strong>Offers:</strong><br>Executive Double: ₦25,000<br>Super Executive: ₦27,000<br>Royal Executive: ₦30,000</p>
+      <p><strong>Contact:</strong>08033529580</p>
+      <a href="tel:+2348033529580" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>WAVELENGTH HOTEL AND SUITES</h2>
+      <p><strong>Address:</strong> 17, 21 wavelength street,podo estate, Ibadan. 19KM</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦15,000<br>Deluxe Room: ₦20,000<br>Executive Room: ₦25,000<br>24 hours power supply</p>
+      <p><strong>Contact:</strong>09038245760</p>
+      <a href="tel:+2349038245760" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>AKINLAF HOTEL</h2>
+      <p><strong>Address:</strong> old lagos road,podo, Ibadan.</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦15,000<br>Deluxe Room: ₦20,000</p>
+      <p><strong></strong></p>
+      <a href="" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>KDREAMS HOTEL</h2>
+      <p><strong>Address:</strong> orita challenge, off odo ona elewe, Ibadan.</p>
+      <p><strong>Offers:</strong><br>Standard Room: ₦15,000<br>Single, double and rooms with AC<br>15% discount on all</p>
+      <p><strong>Contact:</strong>08033586695</p>
+      <a href="tel:+2348033586695" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>BILLIONAIRE HOTEL</h2>
+      <p><strong>Address:</strong> old lagos rd roundabout, oluyole, Ibadan. 17KM</p>
+      <p><strong>Offers:</strong><br>Bronze Room: ₦30,000<br>Silver Room: ₦35,000<br>Gold Room: ₦40,000<br>Free breakfast and wifi</p>
+      <p><strong>Contact:</strong>09165751129</p>
+      <a href="https://billionairesuites.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>HARMONIUS HAVEN SERVICES</h2>
+      <p><strong>Address:</strong> 7 Kuye street, Ibadan. 5.8KM</p>
+      <p><strong>Offers:</strong><br>10% discount on all rooms</p>
+      <p><strong>Contact:</strong>09061926219</p>
+      <a href="tel:+23409061926219" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>IRISHGOLD SUITE</h2>
+      <p><strong>Address:</strong> 15 sodeinde st,anfani rd ibadan. 15KM</p>
+      <p><strong>Offers:</strong><br>Superior Room: ₦30,000<br>Iris Double: ₦45,000<br>Royal Suite: ₦60,000</p>
+      <p><strong>Contact:</strong>08081474009</p>
+      <a href="https://irisgoldsuit.com" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>LABOD HOTEL</h2>
+      <p><strong>Address:</strong> 55 Awolowo Ave, old bodija, Ibadan. 4.5KM</p>
+      <p><strong>Offers:</strong><br>31 Rooms<br>Standard Double: ₦20,000<br>Regular Standard: ₦25,000<br>Family Standard: ₦33,000<br>Royal Suite: ₦45,000</p>
+      <p><strong>Contact:</strong>08148808800</p>
+      <a href="http://labod-hotel.ibadan.hotels-in-fuerteventura.com/en/" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>PARKWAY HOTEL </h2>
+      <p><strong>Address:</strong> 20 Ademiluyi,New bodija, ibadan. 5.8KM</p>
+      <p><strong>Offers:</strong><br>22 Rooms<br>Single Room: ₦10,000<br>Standard Double Room: ₦20,000<br>Suite: ₦35,000</p>
+      <p><strong>Contact:</strong>08166002419</p>
+      <a href="tel:+2348166002419" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>HAVANA IMPERIAL HOTEL </h2>
+      <p><strong>Address:</strong> Beside First bank U.I maingate sango, ojoo road, ibadan. 1.8KM</p>
+      <p><strong>Offers:</strong><br>34 Rooms<br>Classic Double Room: ₦25,000<br>Double Room: ₦35,000<br>Executive Double: ₦40,000<br>Executive Suite: ₦45,000</p>
+      <p><strong>Contact:</strong>08155777776</p>
+      <a href="tel:+2348155777776" target="_blank">Contact Hotel</a>
+    </div>
+    <div class="hotel-card">
+      <h2>JOSIAH INN HOTEL</h2>
+      <p><strong>Address:</strong> Opp NISER U.I Ojoo road, Ibadan. 3.5KM</p>
+      <p><strong>Offers:</strong><br>25 Rooms<br>Executive Room: ₦15,000<br>Executive Royal Room:: ₦20,000</p>
+      <p><strong>Contact:</strong>07008808800</p>
+      <a href="tel:+2347008808800" target="_blank">Contact Hotel</a>
+    </div>
+
+    <!-- Add more hotels below (just duplicate and edit the div) -->
+  </div>
+
+  <script>
+    const searchBar = document.getElementById("searchBar");
+    const hotelList = document.getElementById("hotelList");
+
+    searchBar.addEventListener("keyup", function () {
+      const searchText = searchBar.value.toLowerCase();
+      const hotels = hotelList.getElementsByClassName("hotel-card");
+
+      Array.from(hotels).forEach(hotel => {
+        const text = hotel.innerText.toLowerCase();
+        hotel.style.display = text.includes(searchText) ? "block" : "none";
+      });
+    });
+  </script>
+
+</body>
+</html>
